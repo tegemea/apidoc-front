@@ -1,3 +1,8 @@
 
 $base-color: #333;
 $brand-color: rgb(90, 174, 252);
+
+.base-color { color: $base-color }
+.brand-color { color: $brand-color; }
+
+.bg-brand { background: $brand-color; }
