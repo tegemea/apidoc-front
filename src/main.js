@@ -8,6 +8,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+import { store } from '../store/store'
+
 Vue.config.productionTip = false
 
 Vue.prototype.$axios = Axios;
@@ -33,6 +35,6 @@ const router = new VueRouter({
 })
 
 new Vue({
-  router,
+  router, store,
   render: h => h(App),
 }).$mount('#app')
