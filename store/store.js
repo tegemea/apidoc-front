@@ -18,9 +18,14 @@ export const store = new Vuex.Store({
     terminalParameters: [],
   },
   getters: {
-    applications(state) {
-      return state.applications;
-    }
+    applications(state) { return state.applications; },
+    modules(state) { return state.modules },
+    httpCodes(state) { return state.httpCodes },
+    tables(state) { return state.tables },
+    tableFields(state) { return state.tableFields },
+    terminals(state) { return state.terminals },
+    terminalCodes(state) { return state.terminalCodes },
+    terminalParameters(state) { return state.terminalParameters }
   },
   mutations: {
     storeApplications(state, applications) { state.applications = applications },

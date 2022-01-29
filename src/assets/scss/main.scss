@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Open+Sans&family=Oswald&display=swap');
 
+// fonts variables & classes
+$base-fonts: 'Open Sans', sans-serif;
+$serif-fonts: 'Lora', serif;
+$thin-fonts: 'Oswald', sans-serif;
+
+.base-fonts { font-family: $base-fonts; }
+.serif-fonts { font-family: $serif-fonts; }
+.thin-fonts { font-family: $thin-fonts; }
+
+
+// color variables & classses
 $base-color: #333;
 $brand-color: rgb(90, 174, 252);
 
@@ -6,3 +18,10 @@ $brand-color: rgb(90, 174, 252);
 .brand-color { color: $brand-color; }
 
 .bg-brand { background: $brand-color; }
+
+body {
+  font-family: $base-fonts;
+  color: $base-color;
+  font-size: 16px;
+  box-sizing: border-box;
+}

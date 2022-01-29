@@ -27,7 +27,7 @@ export default {
   },
   mounted() {    
     setTimeout(() => { 
-        this.getApplications;
+        this.getApplications; this.getModules; this.getHttpCodes;
       } ,1500);
   }
 }
