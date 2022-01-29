@@ -5,6 +5,15 @@ import VueRouter from 'vue-router'
 import jQuery from 'jquery'
 import 'bootstrap';
 
+// fontawesome library
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faDharmachakra } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faDharmachakra)
+
+Vue.component('fai', FontAwesomeIcon)
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
